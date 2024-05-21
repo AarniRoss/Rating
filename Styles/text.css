@@ -1,0 +1,11 @@
+.heading {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  
+}
+
+.main-text {
+ color: hsl(217, 12%, 63%);
+ font-size: 15px;
+}

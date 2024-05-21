@@ -1,0 +1,21 @@
+.submit-button {
+  background-color: hsl(25, 97%, 53%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+
+  font-size: 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: white;
+  transition:  28ms;
+}
+
+.submit-button:active {
+  background-color: hsl(25, 97%, 53%) ;
+
+}
