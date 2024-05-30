@@ -17,8 +17,13 @@
 .submitted-box {
   align-items: center;
   text-align: center;
+  
 }
 
+
+.hidden-box {
+  display: none;
+}
 
 
 .rating-row {

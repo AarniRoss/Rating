@@ -18,7 +18,7 @@
 
   </head>
   <body>
-    <div class="question-box">
+    <div id="question-box" class="question-box">
       <div class="star-frame">
         <img src="Pictures/icon-star.svg">
       </div>
@@ -33,11 +33,11 @@
         <p class="number-circle">4</p>
         <p class="number-circle">5</p>
       </div>
-      <button class="submit-button">Submit</button>
+      <button id="submit-button" class="submit-button" onclick="submit()">Submit</button>
     </div>
 
 
-    <div class="submitted-box">
+    <div id="submitted-box" class="submitted-box hidden-box">
       <div>
         <img src="Pictures/illustration-thank-you.svg" alt="">
       </div>
@@ -47,7 +47,8 @@
     </div>
 
     <script src="JavaS/button.js"></script>
+    <script src="JavaS/box.js"></script>
 
-
+*
   </body>
 </html>
