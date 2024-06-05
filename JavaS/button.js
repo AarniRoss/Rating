@@ -6,33 +6,41 @@ let subButton = document.getElementById ('submit-button');
 let submittedBoxStatus = document.getElementById ('submitted-box');
 let questionBoxStatus = document.getElementById ('question-box');
 
-//
-function buttonColorChange() {
-  rateButtons.style.background  = "orange";
-}
 
-/*
-subButton.addEventListener('click', function() {
-  if (questionBoxStatus.style.display !== 'none') {
-    questionBoxStatus.style.display = 'none';
-    submittedBoxStatus.style.display = 'block';
-  } else {
-    questionBoxStatus.style.display = 'block';
-    submittedBoxStatus.style.display = 'none';
-  }
-});
+//Funktio joka muuttaa submit divin toiseen
+function submit() {
+  if (activeButton === null) {
+    alert('Please click a score first.');
+    return;
+  };
+  submittedBoxStatus.classList.remove('hidden-box');
+  questionBoxStatus.classList.add('hidden-box');
+  //Pitää lisätä vielä toiminto, että ei voi painaa ennen kun on arvioitu
+};
+
+
+//Funktio jonka tarkoitus on käsitellä arvosanan antamista
+
+/* Vanhaa koodia
+function buttonColorChange(x) {
+  for (let activeButton = null; activeButton !== null; ) {
+
+  };
+  document.getElementById("number-circle"+x).style.background="#FB7413"
+  document.getElementById("number-circle"+x).style.color="#FFFFFF";
+
+};
 */
 
 
-
-
-function proceed() {
-if () === null
-}
-
-
-
-function submit() {
-  submittedBoxStatus.classList.remove('hidden-box');
-  questionBoxStatus.classList.add('hidden-box');
+let activeButton = null;
+function buttonColorChange(x) {
+  if (activeButton !== null) {
+    activeButton.style.background = ""; //Resetoi tausta värin
+    activeButton.style.color = ""; //Resetoi teksti värin
+  }
+  const currentButton = document.getElementById("number-circle" + x);
+  currentButton.style.background = "#fb7413";
+  currentButton.style.color = "#ffffff";
+  activeButton = currentButton; 
 };
